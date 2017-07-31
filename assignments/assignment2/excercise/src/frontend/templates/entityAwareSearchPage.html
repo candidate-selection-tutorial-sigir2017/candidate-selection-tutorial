@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="span2"></div>
+  <div class="span8 text-center">
+    <div class="well well-small">
+        <h4>Entity Aware Index and Search</h4>
+    </div>
+    <form class="form-search" id="search-box">
+      <input id="search-text" type="text" class="input-xxlarge search-query"
+             placeholder="Search for news articles ex. LA Times politics"
+             autocomplete="off">
+      <button type="submit" class="btn">Search</button>
+    </form>
+  </div>
+  <div class="span2"></div>
+</div>
+
+<div class="row text-center">
+    <table id="search-results" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Search Results</th>
+                <th>Publisher</th>
+                <th>Category</th>
+                <th>Url</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $$(document).ready(function() {
+        var resultsTable = $$("#search-results").DataTable({
+            "ordering": false,
+            "processing": true,
+            "serverSide": true,
+            "searching": true,
+            "mark": true,
+            "sDom": '<"top">t<"bottom"ilp<"clear">>',
+            "ajax": "/searchEntityAwareIndex",
+            "language": {
+                "infoFiltered": ""
+            },
+            "columnDefs": [{
+                className: "dt-body-left",
+                "render": function (data, type, row) {
+                    return '<div class="media"><div class="media-body"><h5 class="media-heading">' + data
+                    + '</h5><span class="badge badge-success">' + row[1] + '</span>   '
+                    + '<span class="badge badge-info">' + row[2] +'</span><a target="_blank" class="pull-right btn btn-primary" href="'
+                    + row[3] + '">View</a></div></div>'
+                },
+                "targets": [0]
+            }, {
+                "visible": false,
+                "targets": [1, 2, 3]
+            }]
+        });
+
+        $$('#search-box').submit( function() {
+            var query = $$('#search-text').val();
+            console.log(query);
+            resultsTable.search(query).draw();
+            return false;
+        });
+    });
+</script>
