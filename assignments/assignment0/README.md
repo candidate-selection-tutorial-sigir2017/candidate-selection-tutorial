@@ -55,8 +55,10 @@ Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/
 
 The virtual machine is currently running Ubuntu and has all the dependencies setup for you. This is a good option if you do not want to corrupt or change things in python installed on your machine.
 
-[**Virtual Box VM Download**]()
+[**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlTEh4X3NzYlB6cXc)
 Username: **sigir** Password: **sigir2017**
+
+You will also need to download [**Virtual Box**](https://www.virtualbox.org/wiki/Downloads) to run the VM.
 
 Open Terminal and follow the commands. These commands do the following tasks
 
