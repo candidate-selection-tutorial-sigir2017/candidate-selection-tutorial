@@ -70,7 +70,7 @@ Open Terminal and follow the commands. These commands do the following tasks
 ~~~
 cd ~/
 mkdir workspace
-github clone <Link>
+git clone https://github.com/candidate-selection-tutorial-sigir2017/candidate-selection-tutorial.git
 source ~/.sigir-venv/bin/actiate
 cd candidate-selection-tutorial
 cd assignments/assignment0/excercise
