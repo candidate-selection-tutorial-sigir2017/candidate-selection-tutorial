@@ -1,5 +1,4 @@
 cycler==0.10.0
-functools32==3.2.3.post2
 httplib2==0.10.3
 lxml==3.8.0
 nltk==3.2.4
