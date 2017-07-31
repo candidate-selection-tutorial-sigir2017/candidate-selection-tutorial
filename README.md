@@ -7,4 +7,4 @@ Modern day social media search and recommender systems require complex query for
 Dhruv Arya, Ganesh Venkataraman, Aman Grover, Krishnaram Kenthapadi, Yiqun Liu 
 
 ### Final Output
-![Demo](finished-product/resources/sigir2017-demo.png)
+![Demo](finished-product/resources/sigir2017-demo.gif)
