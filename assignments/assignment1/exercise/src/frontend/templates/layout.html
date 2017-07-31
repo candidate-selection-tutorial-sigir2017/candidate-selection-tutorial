@@ -1,0 +1,33 @@
+$def with (content)
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/g/mark.js(jquery.mark.min.js),datatables.mark.js"></script>
+
+        <link href="//maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="//cdn.jsdelivr.net/datatables.mark.js/2.0.0/datatables.mark.min.css" rel="stylesheet">
+        <title>News Articles - Search</title>
+    </head>
+
+    <body>
+       <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="#">New Articles - Search</a>
+            <ul class="nav">
+              <li><a href="/">Simple Index</a></li>
+            </ul>
+          </div>
+       </div>
+       <div class="container">
+         <!--<div class="content">-->
+         <br><br>
+
+            $:content
+         <!--</div>-->
+       </div> <!-- /container -->
+    </body>
+</html>
