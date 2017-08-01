@@ -70,6 +70,7 @@ Open Terminal and follow the commands. These commands do the following tasks
 ~~~
 cd ~/
 mkdir workspace
+cd workspace
 git clone https://github.com/candidate-selection-tutorial-sigir2017/candidate-selection-tutorial.git
 source ~/.sigir-venv/bin/activate
 cd candidate-selection-tutorial
