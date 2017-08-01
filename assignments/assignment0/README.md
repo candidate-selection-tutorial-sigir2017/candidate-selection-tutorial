@@ -71,7 +71,7 @@ Open Terminal and follow the commands. These commands do the following tasks
 cd ~/
 mkdir workspace
 git clone https://github.com/candidate-selection-tutorial-sigir2017/candidate-selection-tutorial.git
-source ~/.sigir-venv/bin/actiate
+source ~/.sigir-venv/bin/activate
 cd candidate-selection-tutorial
 cd assignments/assignment0/excercise
 ./python-env.sh
