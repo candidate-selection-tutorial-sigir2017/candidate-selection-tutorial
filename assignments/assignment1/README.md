@@ -16,7 +16,7 @@ We have provided you with a basic script that prints out the data in a tabular f
 To run the script issue the following command or run it with arguments from PyCharm.
 
 ~~~
-cd ~/workspace/candidate-selection-tutorial/assignments/assignment1/excercise/src
+cd ~/workspace/candidate-selection-tutorial/assignments/assignment1/exercise/src
 python understand_data.py --input /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/news-aggregator-dataset/newsCorpora.csv
 ~~~
 
