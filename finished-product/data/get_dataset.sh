@@ -32,6 +32,7 @@ mv stanford-ner-2017-06-09 stanford-ner
 rm -r stanford-ner-2017-06-09.zip
 ec "\nDownloading Stanford Core NLP english models"
 wget -nc http://nlp.stanford.edu/software/stanford-english-corenlp-2017-06-09-models.jar
+rm -r stanford-english-corenlp-models
 mkdir stanford-english-corenlp-models
 cd stanford-english-corenlp-models
 jar -xvf ./../stanford-english-corenlp-2017-06-09-models.jar
