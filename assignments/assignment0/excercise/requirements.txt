@@ -13,3 +13,4 @@ requests==2.10.0
 six==1.10.0
 sunburnt==0.6
 web.py==0.37
+sner==0.2.1
