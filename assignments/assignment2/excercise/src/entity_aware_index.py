@@ -7,7 +7,7 @@ import pysolr
 import gzip
 
 INDEX_NAME = 'entityawareindex'
-INDEX_MAP = ["ID", "TITLE", "URL", "PUBLISHER", "CATEGORY", "STORY", "HOSTNAME", "TIMESTAMP"]
+INDEX_MAP = ["id", "title", "url", "publisher", "category", "story", "hostname", "timestamp"]
 SOLR_URL = 'http://localhost:8983/solr'
 
 # Location, Time, Person, Organization, Money, Percent, Date (Stanford NER)
