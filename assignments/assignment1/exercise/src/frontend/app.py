@@ -16,8 +16,6 @@ SOLR_SIMPLEINDEX = pysolr.Solr('http://localhost:8983/solr/simpleindex')
 def get_web_input(web_input):
     draw = web_input['draw']
     query = web_input['search[value]']
-    if len(query) == 0:
-        query = '*:*'
     offset = web_input['start']
     count = web_input['length']
     return draw, query, offset, count
