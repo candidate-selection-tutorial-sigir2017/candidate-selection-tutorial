@@ -18,7 +18,7 @@ function ec () {
 
 ec "Downloading the NewsAggregator dataset"
 wget -nc http://archive.ics.uci.edu/ml/machine-learning-databases/00359/NewsAggregatorDataset.zip
-rm -r news-aggregator-dataset
+rm -rf news-aggregator-dataset
 mkdir news-aggregator-dataset
 cd news-aggregator-dataset
 unzip ./../NewsAggregatorDataset.zip
@@ -29,15 +29,15 @@ ec "\nFetching Stanford NER library and dependencies"
 wget -nc "https://nlp.stanford.edu/software/stanford-ner-2017-06-09.zip"
 unzip stanford-ner-2017-06-09.zip
 mv stanford-ner-2017-06-09 stanford-ner
-rm -r stanford-ner-2017-06-09.zip
+rm -rf stanford-ner-2017-06-09.zip
 ec "\nDownloading Stanford Core NLP english models"
 wget -nc http://nlp.stanford.edu/software/stanford-english-corenlp-2017-06-09-models.jar
-rm -r stanford-english-corenlp-models
+rm -rf stanford-english-corenlp-models
 mkdir stanford-english-corenlp-models
 cd stanford-english-corenlp-models
 jar -xvf ./../stanford-english-corenlp-2017-06-09-models.jar
 cd ..
 cp -r stanford-english-corenlp-models/edu/stanford/nlp/models/ner/* stanford-ner/classifiers/
-rm -r stanford-english-corenlp-models
+rm -rf stanford-english-corenlp-models
 ec "\n\nData dependency setup completed!"
 
