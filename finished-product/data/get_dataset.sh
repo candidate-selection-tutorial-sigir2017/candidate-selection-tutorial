@@ -18,6 +18,7 @@ function ec () {
 
 ec "Downloading the NewsAggregator dataset"
 wget -nc http://archive.ics.uci.edu/ml/machine-learning-databases/00359/NewsAggregatorDataset.zip
+rm -r news-aggregator-dataset
 mkdir news-aggregator-dataset
 cd news-aggregator-dataset
 unzip ./../NewsAggregatorDataset.zip
