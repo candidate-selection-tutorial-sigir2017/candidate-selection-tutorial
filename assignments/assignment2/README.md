@@ -56,6 +56,21 @@ NER Tags: {"ORGANIZATION": ["PayPal"], "PERSON": ["Cooperman"]}
 Generated Query: _news_title_organization:paypal AND _news_title_person:Cooperman
 ~~~
 
+#### Helper Code Snippets
+* Calling the Stanford NER server to get NER tags, accumulate_tags function in SearchEntityAwareIndex is provided for aggregating the NER tags.
+
+~~~
+entity_tags = STANFORD_NER_SERVER.get_entities(query)
+entity_tags = self.accumulate_tags(entity_tags)
+~~~
+
+* Boosting Paramter - You can pass in an optional boosting parameter of the form to boost matches in certain fields. Example
+
+~~~
+qf = '_news_title_person^10 _news_title_organization^5 _news_title_location^100 _news_title^2.0 _news_publisher^10.0'
+
+~~~
+
 ### Running the server
 To see the search in action follow the commands below:
 
