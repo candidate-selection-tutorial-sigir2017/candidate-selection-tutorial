@@ -53,7 +53,7 @@ As next step open the file **frontend/app.py**. This is our middle tier that doe
 Query: cooperman paypal
 Tokens: ['cooperman', 'paypal']
 NER Tags: {"ORGANIZATION": ["PayPal"], "PERSON": ["Cooperman"]}
-Generated Query: 
+Generated Query: _news_title_organization:paypal AND _news_title_person:Cooperman
 ~~~
 
 ### Running the server

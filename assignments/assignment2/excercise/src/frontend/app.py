@@ -1,7 +1,12 @@
+from itertools import groupby
+from operator import itemgetter
+
 import web
 import pysolr
 import string
 import json
+
+from collections import defaultdict
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sner import Ner
@@ -99,6 +104,27 @@ class SearchSimpleIndex:
 
 
 class SearchEntityAwareIndex:
+    def accumulate_tags(self, list_of_tuples):
+        tokens, entities = zip(*list_of_tuples)
+        recognised = defaultdict(set)
+        duplicates = defaultdict(list)
+
+        for i, item in enumerate(entities):
+            duplicates[item].append(i)
+
+        for key, value in duplicates.items():
+            for k, g in groupby(enumerate(value), lambda x: x[0] - x[1]):
+                indices = list(map(itemgetter(1), g))
+                recognised[key].add(' '.join(tokens[index] for index in indices))
+        # recognised.pop('O', None)
+
+        recognised = dict(recognised)
+        ner_info = {}
+        for key, value in recognised.iteritems():
+            ner_info[key] = list(value)
+        return ner_info
+
+
     def GET(self):
         draw, query, offset, count = get_web_input(web_input=web.input())
 
