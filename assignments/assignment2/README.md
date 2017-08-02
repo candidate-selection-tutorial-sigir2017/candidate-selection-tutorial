@@ -1,4 +1,4 @@
-# Assignment 2!
+stanford_title_ner_tags_case_sensitive.csv.gz# Assignment 2!
 
 In this assignment we will be building a better index with fields specific to the entities recognized in the title. We will make use of Stanford NER along NLTK. In addition to building the index we will work on utilizing entities in the incoming query and writing a field specific query matching entities in the query with the fields containing those entities in the search index. 
 
@@ -38,7 +38,7 @@ To begin indexing follow the commands listed below, you need to be in the **assi
 
 ~~~
 cd exercise/src
-python entity_aware_index.py --input /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/news-aggregator-dataset/newsCorpora.csv
+python entity_aware_index.py --input /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/news-aggregator-dataset/newsCorpora.csv --ner_tags /home/sigir/workspace/candidate-selection-tutorial/finished-product/resources/stanford_title_ner_tags_case_sensitive.csv.gz
 ~~~
 
 ## Query Rewriting and Searching
