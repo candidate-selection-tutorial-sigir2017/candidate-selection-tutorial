@@ -81,7 +81,7 @@ python app.py
 
 This should run the simple index search server on [http://0.0.0.0:8080](http://0.0.0.0:8080). The page should look like the image below. Try out some queries to see if you are getting results back.
 
-Congratulations you have completed assignment 1!
+Congratulations you have completed assignment 2!
 
 
 
