@@ -56,8 +56,10 @@ Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/
 The virtual machine is currently running Ubuntu and has all the dependencies setup for you. This is a good option if you do not want to corrupt or change things in python installed on your machine.
 
 
-* [**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlWFo0SlhHYmVidTg) 
+* [**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlc1NQR3BVMkF2WjA) Gzip File 1.6G **or**
+* [**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlWFo0SlhHYmVidTg) 7z File 1.2G
 You will need to unzip this 7z - Click here to see instructions for [**Windows**](), [**Mac**](http://www.kekaosx.com/en/), [**Linux**](https://askubuntu.com/questions/341628/how-to-extract-tar-7z-files-from-command-line) 
+
 
 * You will also need to download [**Virtual Box**](https://www.virtualbox.org/wiki/Downloads) to run the VM.
 * Username: **sigir** Password: **sigir2017** 
