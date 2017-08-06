@@ -55,10 +55,12 @@ Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/
 
 The virtual machine is currently running Ubuntu and has all the dependencies setup for you. This is a good option if you do not want to corrupt or change things in python installed on your machine.
 
-[**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlTEh4X3NzYlB6cXc)
-Username: **sigir** Password: **sigir2017**
 
-You will also need to download [**Virtual Box**](https://www.virtualbox.org/wiki/Downloads) to run the VM.
+* [**Virtual Box VM Download**](https://drive.google.com/open?id=0B1eBBrAnKVJlWFo0SlhHYmVidTg) 
+You will need to unzip this 7z - Click here to see instructions for [**Windows**](), [**Mac**](http://www.kekaosx.com/en/), [**Linux**](https://askubuntu.com/questions/341628/how-to-extract-tar-7z-files-from-command-line) 
+
+* You will also need to download [**Virtual Box**](https://www.virtualbox.org/wiki/Downloads) to run the VM.
+* Username: **sigir** Password: **sigir2017** 
 
 Open Terminal and follow the commands. These commands do the following tasks
 
@@ -83,7 +85,7 @@ cd assignments/assignment0/excercise
 Open another Terminal window and start the **Stanford NER** server. This will be used in subsequent assignments for Named Entity Recognition.
 
 ~~~
-java -Djava.ext.dirs=./lib -cp /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/stanford-ner/stanford-ner.jar edu.stanford.nlp.ie.NERServer -port 9199 -loadClassifier /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/stanford-ner/classifiers/english.muc.7class.distsim.crf.ser.gz  -tokenizerFactory edu.stanford.nlp.process.WhitespaceTokenizer -tokenizerOptions tokenizeNLs=false
+java -Djava.ext.dirs=./lib -cp /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/stanford-ner/stanford-ner.jar edu.stanford.nlp.ie.NERServer -port 9199 -loadClassifier /home/sigir/workspace/candidate-selection-tutorial/finished-product/data/stanford-ner/classifiers/english.all.3class.caseless.distsim.crf.ser.gz  -tokenizerFactory edu.stanford.nlp.process.WhitespaceTokenizer -tokenizerOptions tokenizeNLs=false
 ~~~
 
 Once you have completed the above steps your development environment has been setup and you are ready to proceed to Assignment 1!
